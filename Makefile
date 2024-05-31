@@ -24,14 +24,10 @@ hll_infer_m: hll_infer_m.cpp $(SRC) $(HEADER)
 hll_deflation_s1_v1: hll_deflation_s1_v1.cpp $(SRC) $(HEADER) 
 	g++ $(CFLAGS) $(INCLUDES) -o $@ $< $(SRC) $(LIBS)
 
-
 hll_deflation_s1_v2: hll_deflation_s1_v2.cpp $(SRC) $(HEADER) 
 	g++ $(CFLAGS) $(INCLUDES) -o $@ $< $(SRC) $(LIBS)
 
 hll_inflation: hll_inflation.cpp $(SRC) $(HEADER) 
-	g++ $(CFLAGS) $(INCLUDES) -o $@ $< $(SRC) $(LIBS)
-
-hll_inflation2: hll_inflation2.cpp $(SRC) $(HEADER) 
 	g++ $(CFLAGS) $(INCLUDES) -o $@ $< $(SRC) $(LIBS)
 
 hll_deflation: hll_deflation.cpp $(SRC) $(HEADER) 
